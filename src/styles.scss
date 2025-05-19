@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Playfair+Display:wght@300;700&display=swap');
+
+:root {
+  /* Primary Colors */
+  --color-black: #010101;
+  --color-white: #FFFFFF;
+  --color-red: #D80032;
+  /* Secondary Colors */
+  --color-pink: #FF3E8F;
+  --color-green: #00A86B;
+  --color-gold: #D4AF37;
+  /* Neutral Tones */
+  --color-beige: #E6D2AA;
+  --color-gray: #D9D9D9;
+  --color-charcoal: #333333;
+
+  /* Typography */
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Montserrat', sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--color-black);
+  color: var(--color-white);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
