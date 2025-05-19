@@ -1,34 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-home',
-  standalone: true,
-  imports: [CommonModule],
-  template: `
-    <div class="hero-section">
-      <div class="hero-carousel">
-        <img
-          *ngFor="let img of heroImages; let i = index"
-          [src]="img"
-          [class.active]="i === activeIndex"
-          class="hero-img"
-          alt="Signature photograph placeholder"
-        />
-        <div class="carousel-indicator">
-          <span
-            *ngFor="let img of heroImages; let i = index"
-            [class.active]="i === activeIndex"
-          ></span>
-        </div>
-      </div>
-      <div class="hero-overlay">
-        <h1 class="hero-title">Mfanaka Ka Maluleke</h1>
-        <p class="hero-subtitle">South Africa's Boldest Fashion Photographer</p>
-      </div>
-    </div>
-  `,
-  styleUrls: ['./app.component.scss'],
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
   heroImages = [
